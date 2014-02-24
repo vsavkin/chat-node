@@ -1,0 +1,20 @@
+{
+  "name": "nodechat",
+  "version": "0.0.0",
+  "authors": [
+    "Victor Savkin <vic.savkin@gmail.com>"
+  ],
+  "license": "MIT",
+  "directory": "public/bower_components",
+  "dependencies" : {
+    "angular" : "latest",
+    "socket.io-client" : "latest"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Chat</title>
+    <link rel="stylesheet" href="/css/style.css"></link>
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/socket.io-client/dist/socket.io.js"></script>
+    <script src="/js/chat.js"></script>
+  </head>
+
+  <body ng-app="chat" ng-controller="ChatCtrl as ctrl">
+    <h1>Chat</h1>
+    <div id="messages">
+      <ul>
+        <li ng-repeat="m in ctrl.chat.messages">
+          {{m.text}}
+        </li>
+      </ul>
+    </div>
+
+    <form ng-submit="ctrl.sendMessage()">
+      <input ng-model="ctrl.message">
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>
